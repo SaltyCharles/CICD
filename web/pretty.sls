@@ -1,10 +1,6 @@
 # setup the pretty
-{% set twilio_pic = salt['pillar.get']('nginx_background', '../img/bg3.jpg') %}
-{% set title = salt['pillar.get']('nginx_title', 'Salted NGINX') %}
-=======
 {% set twilio_pic = salt['pillar.get']('nginx_background', '../img/bg1.jpg') %}
 {% set title = salt['pillar.get']('nginx_title', 'Salted NGINX') %}
->>>>>>> origin/master
 {% set customer = salt['pillar.get']('nginx_customer_1', 'Salty the Cube') %}
 {% set customer_subtitle = salt['pillar.get']('nginx_cust1sub', 'Get Salted') %}
 {% set customer_image = salt['pillar.get']('nginx_cust1img', 'img/team/1.jpg') %}
@@ -21,7 +17,7 @@ nginx:
 
 /usr/share/nginx/html/:
   file.recurse:
-    - source: salt://web/pretty
+    - source: salt://nginx/pretty
     - template: jinja
     - include_empty: True
     - defaults:
