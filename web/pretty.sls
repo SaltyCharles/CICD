@@ -1,5 +1,5 @@
 # setup the pretty
-{% set twilio_pic = salt['pillar.get']('nginx_background', '../img/bg2.jpg') %}
+{% set twilio_pic = salt['pillar.get']('nginx_background', '../img/bg1.jpg') %}
 {% set title = salt['pillar.get']('nginx_title', 'Salted NGINX') %}
 {% set customer = salt['pillar.get']('nginx_customer_1', 'Salty the Cube') %}
 {% set customer_subtitle = salt['pillar.get']('nginx_cust1sub', 'Get Salted') %}
