@@ -1,5 +1,4 @@
 # setup the pretty
-<<<<<<< HEAD
 {% set twilio_pic = salt['pillar.get']('nginx_background', '../img/bg3.jpg') %}
 {% set title = salt['pillar.get']('nginx_title', 'Salted NGINX') %}
 =======
