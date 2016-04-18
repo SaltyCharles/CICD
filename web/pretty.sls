@@ -17,7 +17,7 @@ nginx:
 
 /usr/share/nginx/html/:
   file.recurse:
-    - source: salt://nginx/pretty
+    - source: salt://web/pretty
     - template: jinja
     - include_empty: True
     - defaults:
